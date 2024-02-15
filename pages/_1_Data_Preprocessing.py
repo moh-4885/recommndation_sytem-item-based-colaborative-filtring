@@ -58,7 +58,7 @@ def preprocess_and_eda(movies, ratings):
     df = pd.merge(ratings, movies, on='movieId', how='left')
 
     # EDA Steps
-    st.title("Exploratory Data Analysis (EDA)")
+    st.title("Exploratory Data Analysis (EDA) :")
 
     # Basic Statistics
     st.header("Basic Statistics")
