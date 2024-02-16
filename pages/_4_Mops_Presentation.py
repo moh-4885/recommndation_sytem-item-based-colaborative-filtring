@@ -3,6 +3,14 @@ import reveal_slides as rs
 import os
 
 
+st.set_page_config(
+    page_title="mlps presentation ",
+    initial_sidebar_state='expanded',
+    layout='wide'
+)
+with open('style.css') as f:
+    st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+
 def load_slides(slide_directory):
   slides = []
   for filename in os.listdir(slide_directory):
